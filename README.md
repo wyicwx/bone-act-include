@@ -20,9 +20,9 @@ bone.dest('dist')
 	.act(include);
 ```
 
-### 说明 
+### 说明
 
-支持html、css和js文件中include其他文件，处理器执行后include的文件会合并成一个文件
+支持.html、.css、.less和.js后缀的文件中include其他文件，处理器执行后include的文件会合并成一个文件
 
 html调用方式
 
@@ -39,7 +39,7 @@ js调用方式
  */
 ```
 
-css调用方式
+less、css调用方式
 ```css
 /**
  include('./lib/jquery.js')
