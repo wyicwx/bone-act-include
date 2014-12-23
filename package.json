@@ -1,6 +1,6 @@
 {
   "name": "bone-include",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,6 @@
     "url": "http://weibo.com/simplemaple"
   },
   "license": "MIT",
-  "readme": "ERROR: No README data found!",
   "_id": "bone-include@0.0.1",
   "_from": "bone-include@",
   "dependencies": {
