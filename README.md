@@ -1,4 +1,4 @@
-# bone-include
+# bone-act-include
 > bone的合并文件处理器
 
 ### 安装及使用
@@ -6,14 +6,14 @@
 通过npm安装
 
 ```sh
-$ npm install bone-include 
+$ npm install bone-act-include 
 ```
 
 安装后在`bonefile.js`文件内通过`act()`加载
 
 ```js
 var bone = require('bone');
-var include = require('bone-include');
+var include = require('bone-act-include');
 
 bone.dest('dist')
 	.src('~/src/main.js')
