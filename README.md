@@ -1,5 +1,7 @@
 # bone-act-include
-> bone的合并文件处理器
+> bone的include文件处理器
+
+[![travis](https://api.travis-ci.org/wyicwx/bone-act-include.png)](https://travis-ci.org/wyicwx/bone-act-include) [![Coverage Status](https://coveralls.io/repos/wyicwx/bone-act-include/badge.png?branch=master)](https://coveralls.io/r/wyicwx/bone-act-include?branch=master)
 
 ### 安装及使用
 
@@ -22,9 +24,11 @@ bone.dest('dist')
 
 ### 说明
 
-支持.html、.css、.less和.js后缀的文件中include其他文件，处理器执行后include的文件会合并成一个文件
+支持在任意文件中include其他文件，处理器执行后会替换include为对应文件，并合并成一个文件
 
-html调用方式
+调用方式:
+
++ html标签式
 
 ```html
 <script type="text/javascript">
@@ -32,18 +36,14 @@ html调用方式
 </script>
 ```
 
-js调用方式
++ 注释式
+
 ```js
 /**
  include('./lib/jquery.js')
  */
-```
 
-less、css调用方式
-```css
-/**
- include('./lib/jquery.js')
- */
+//include('./lib/jquery.js')
 ```
 
 ### 其他

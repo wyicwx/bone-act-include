@@ -1,10 +1,22 @@
 {
   "name": "bone-act-include",
   "version": "0.0.8",
-  "description": "",
+  "description": "include file plugin for bone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "bone-act-include/lib"
+    }
+  },
+  "devDependencies": {
+    "blanket": "*",
+    "bone": "0.0.19",
+    "istanbul": "~0.3.2",
+    "mocha": "*"
   },
   "author": {
     "name": "wyicwx",
@@ -12,9 +24,8 @@
     "url": "http://weibo.com/simplemaple"
   },
   "license": "MIT",
-  "_id": "bone-include@0.0.1",
-  "_from": "bone-include@",
-  "dependencies": {
-    "akostream": "0.0.5"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wyicwx/bone-act-include.git"
   }
 }
