@@ -1,6 +1,6 @@
 {
   "name": "bone-act-include",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "include file plugin for bone",
   "main": "index.js",
   "scripts": {
