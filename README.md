@@ -43,8 +43,30 @@ bone.dest('dist')
  include('./lib/jquery.js')
  */
 
+/* include('./lib/jquery.js') */
+
 //include('./lib/jquery.js')
 ```
+
+include函数可以传入第二个参数来增加include的功能
+
+```js
+/* include(filepath, option) */
+```
+
++ minify: Boolean
+通过简单的方式将文件压缩成一行，仅支持被include文件为css、js、html类型
+```js
+/* include('./lib/jquery.js', {minify: true}) */
+```
+
++ escape: Boolean
+转译引号，仅支持被include文件为html类型
+```js
+/* include('./lib/jquery.js', {minify: true, escape: true})
+```
+
+**ps**:只有注释式的include可以传递参数
 
 ### 其他
 
