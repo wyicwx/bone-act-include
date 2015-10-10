@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "blanket": "*",
-    "bone": "0.0.19",
+    "bone": "~0.0.25",
     "istanbul": "~0.3.2",
     "mocha": "*"
   },
@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "cssmin": "^0.4.3",
-    "jsmin": "^1.0.1"
+    "jsmin2": "^1.1.7"
   }
 }
