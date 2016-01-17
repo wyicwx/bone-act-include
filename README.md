@@ -1,8 +1,7 @@
 # bone-act-include
 > bone的include文件处理器
 
-[![travis](https://api.travis-ci.org/wyicwx/bone-act-include.png)](https://travis-ci.org/wyicwx/bone-act-include) [![Coverage Status](https://coveralls.io/repos/wyicwx/bone-act-include/badge.png?branch=master)](https://coveralls.io/r/wyicwx/bone-act-include?branch=master)
-
+[![NPM version](https://img.shields.io/npm/v/bone-act-include.svg?style=flat)](https://npmjs.org/package/bone-act-include) [![travis](https://api.travis-ci.org/wyicwx/bone-act-include.png)](https://travis-ci.org/wyicwx/bone-act-include)
 ### 安装及使用
 
 通过npm安装
@@ -15,7 +14,7 @@ $ npm install bone-act-include
 
 ```js
 var bone = require('bone');
-var include = require('bone-act-include');
+var include = bone.require('bone-act-include');
 
 bone.dest('dist')
 	.src('~/src/main.js')
